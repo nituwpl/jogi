@@ -1,0 +1,123 @@
+/*---------- Slider Css Start -------*/
+* {
+    padding: 0;
+    margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.ast_slider_wrapper{
+    float: left;
+    width: 100%;
+    position: relative;
+//	background-color:#111111;
+	z-index:1;
+	//background-image: url(http://stellarium.bold-themes.com/wp-content/uploads/2018/07/hero_stars.gif);
+    background-position: 50% 0px;
+}
+.ast_bannertext_wrapper ul{
+    margin:0px;
+}
+#testimonials li{ 
+  //display:none;
+}
+#testimonials ul{
+  list-style:none;
+}
+
+.ast_slider_wrapper .ast_img_overlay {
+    z-index: -1;
+}
+.ast_banner_text {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.rotate_img {
+    animation: rotating 20s linear infinite;
+    width: 85%;
+    border-radius: 50% !important;
+    background: #ffc000;
+    box-shadow: inset 10px 0 48px rgb(80 160 255 / 80%), 0 0 30px 6px rgb(80 140 255 / 40%) !important;
+}
+.rotate_img:hover{
+  animation-play-state: paused;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ast_bannertext_wrapper h2 {
+    font-size: 42px;
+    //max-width: 500px;
+    text-align: left;
+    line-height: 60px;
+    text-shadow: 3px 2px 1px red;
+    color:#fff;
+}
+.ast_bannertext_wrapper {
+    float: left;
+    width: 50%;
+    padding: 15px;
+	text-align: left;
+}
+.ast_btn {
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 7px 30px;
+    border-radius: 50px;
+}
+.ast_btn:hover {
+    
+    color: #000;
+	background:#fff;
+}
+
+.ast_bannertext_wrapper ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+}
+.ast_bannertext_wrapper ul li:last-child{
+	margin-right:0px;
+}
+.ast_bannertext_wrapper ul li:after{
+    content: "*";
+    position: absolute;
+    top: 3px;
+    right: -20px;
+}
+.ast_bannertext_wrapper ul li:last-child:after{
+    display:none;
+}
+.ast_bannertext_wrapper img{
+	display:inline-block;
+}
+@-webkit-keyframes starfieldRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/*---------- Slider Css End  -------*/
